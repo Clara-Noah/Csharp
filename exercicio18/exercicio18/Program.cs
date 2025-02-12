@@ -13,7 +13,7 @@ public class Exercicio18
         //foreach quando usado salta de linha automaticamente enquanto o for não, podemos usar + " " + para adicionar algo entre os arrays
         for (int contador = 0; contador < cidades.Length; contador++)
         {
-            Console.WriteLine(cidades[contador] + " - " + habitantes[contador] + " habitantes");
+            Console.WriteLine($"{cidades[contador]} - {habitantes[contador]} habitantes");
         }
     }
 }
