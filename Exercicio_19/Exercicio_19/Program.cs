@@ -64,7 +64,7 @@ public class exercicio19
                     break;
                 case "4":
                     //caso o utilizador escolha a opção 4, ou seja, nenhuma das 3 opções anteriores, o programa vai sair
-                    Console.WriteLine("saindo. . . . . ");
+                    Console.WriteLine("A sair. . . . . ");
                     break;
 
                     //se nenhuma das 4 opções for escolhida, esta opção será acionada
