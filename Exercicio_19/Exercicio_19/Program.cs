@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 public class exercicio19
@@ -8,19 +8,21 @@ public class exercicio19
         //iplementar um dicionario
 
         Dictionary<string, string> listatelefonica = new Dictionary<string, string>();
+        string opcao;
+        do
+        {
+            // Apresentar o menu
+            Console.WriteLine("1..... Adicionar contacto");
+            Console.WriteLine("2..... pesquisar contacto");
+            Console.WriteLine("3..... remover contacto");
+            Console.WriteLine("4..... sair");
 
-        // Apresentar o menu
-        Console.WriteLine("1..... Adicionar contacto");
-        Console.WriteLine("2..... pesquisar contacto");
-        Console.WriteLine("3..... remover contacto");
-        Console.WriteLine("4..... sair");
+            // Pedir ao utilizador que escolha uma opção
 
-        // Pedir ao utilizador que escolha uma opção
+            Console.WriteLine("Escolha uma opção: ");
+            //variavel opcao
+            opcao = Console.ReadLine();
 
-        Console.WriteLine("Escolha uma opção: ");
-        //variavel opcao
-        String opcao = Console.ReadLine();
-     
             switch (opcao)
             {
                 case "1":
@@ -49,7 +51,7 @@ public class exercicio19
                     }
                     break;
                 case "3":
-                  
+
                     Console.WriteLine("Introduza o contacto que deseja remover: ");
                     nomepesquisa = Console.ReadLine();
                     if (listatelefonica.ContainsKey(nomepesquisa))
@@ -67,11 +69,12 @@ public class exercicio19
                     Console.WriteLine("A sair. . . . . ");
                     break;
 
-                    //se nenhuma das 4 opções for escolhida, esta opção será acionada
+                //se nenhuma das 4 opções for escolhida, esta opção será acionada
                 default:
-                    Console.WriteLine("opção invalida")
+                    Console.WriteLine("opção invalida");
                         break;
             }
-        
+        } while (opcao != "4");
     }
 }
+
