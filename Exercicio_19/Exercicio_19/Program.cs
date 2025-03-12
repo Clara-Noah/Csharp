@@ -5,8 +5,6 @@ public class exercicio19
 {
     public static void Main(string[] args)
     {
-        Dictionary<string, int> AgendaContactos = new Dictionary<string, int>();
-
         //iplementar um dicionario
 
         Dictionary<string, string> listatelefonica = new Dictionary<string, string>();
